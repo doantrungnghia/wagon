@@ -1,0 +1,53 @@
+section.stories
+    background-image: url('../images/bg_3.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .stories_square
+        @extend %square
+        background-color: $color_green
+        margin-left: calc(100% - 370px)
+        .stories_number
+            @extend %number
+            .stories_number--hidden
+                @extend %number--hidden
+        .stories_title
+            @extend %title
+            bottom: -45px
+    .stories_content
+        width: calc(100% - 370px)
+        background-color: white
+        padding: 60px 5%
+        margin-top: 370px
+        .stories_item
+            padding: 20px 0
+            .stories_number
+                font-size: 50px
+                color: $color_green
+                font-weight: bold
+            .stories_name
+                font-size: 18px
+                span    
+                    color: $color_pink
+                    font-weight: bold
+                    font-size: 15px
+                    margin-top: 10px
+            .stories_des
+                font-weight: bold
+        .stories_go
+            font-weight: bold
+            width: 160px
+            margin: 0 auto
+            a
+                color: $color_green
+                letter-spacing: 6px
+                border-bottom: 4px solid $color_green
+                padding: 10px 0
+                transition: 0.6s
+                &:hover
+                    text-decoration: none
+                    color: $color_pink
+                    border-bottom-color: $color_pink
+                

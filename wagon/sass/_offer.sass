@@ -1,0 +1,58 @@
+section.offer
+    background-image: url('../images/bg_4.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .offer_square
+        @extend %square
+        background-color: $color_orange
+        .offer_number
+            @extend %number
+            .offer_number--hidden
+                @extend %number--hidden
+        .offer_title
+            @extend %title
+            bottom: -45px
+    .offer_content
+        width: calc(100% - 370px)
+        margin-left: 370px
+        margin-top: 370px
+        background-color: white
+        overflow: hidden
+        .offer_video
+            font-family: 'Times New Roman', Times, serif
+            font-size: 170px
+            color: $color_purple
+            position: relative
+            bottom: 80px      
+        .offer_about-left,.offer_about-right
+            position: relative
+            bottom: 50px
+            padding: 0 5% 50px 5%
+            .--orange 
+                color: $color_orange
+                font-weight: bold
+        .offer_about-right
+            li  
+                margin-top: 10px
+            li:first-child
+                margin-top: 0
+        .offer_img
+            background-image: url('../images/video_img.jpg')
+            height: 400px
+            background-size: cover
+            padding: 0 0
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &:hover .offer-icon
+                opacity: 0.6
+            .offer-icon
+                transition: 0.5s
+           
+                
+
+        

@@ -1,0 +1,67 @@
+section.portfolio
+    background-image: url('../images/bg_2.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .portfolio_square
+        @extend %square
+        background-color: $color_orange
+        margin-left: calc( 100% - 370px)
+        .portfolio_number
+            @extend %number
+            .portfolio_number--hidden
+                @extend %number--hidden
+        .portfolio_title
+            @extend %title
+    .portfolio_content
+        width: calc(100% - 370px)
+        margin-top: 370px
+        .portfolio_item
+            width: 100%
+            height: 355px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-position: center center
+            background-size: cover
+            .portfolio_bg
+                width: calc(100% - 30px)
+                height: calc(100% - 30px)
+                box-sizing: border-box
+                padding-left: 10px
+                background-color: white
+                padding-top: 95px
+                transition: 0.8s
+                opacity: 0
+                h4
+                    font-weight: bold
+                    font-size: 21px
+                    letter-spacing: 5px
+        .portfolio_item-1
+            background-image: url('../images/portfolio_item_01.jpg')
+            background-size: cover  
+        .portfolio_item-2_1
+            background-image: url('../images/portfolio_item_02.jpg')
+        .portfolio_item-2_2
+            background-image: url('../images/portfolio_item_08.jpg')
+        .portfolio_item-3
+            background-image: url('../images/portfolio_item_05.jpg')
+            height: 710px
+        .portfolio_item-4
+            background-color: $color_pink
+            height: 122px
+            width: 430px
+            h4
+                font-size: 21px
+                font-weight: bold           
+        .portfolio_item-1:hover .portfolio_bg
+            opacity: 1
+        .portfolio_item-2_1:hover .portfolio_bg
+            opacity: 1
+        .portfolio_item-2_2:hover .portfolio_bg
+            opacity: 1
+        .portfolio_item-3:hover .portfolio_bg
+            padding-top: 255px
+            opacity: 1

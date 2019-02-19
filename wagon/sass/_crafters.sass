@@ -1,0 +1,99 @@
+section.crafters
+    background-image: url('../images/bg_3.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .crafters_square
+        @extend %square
+        background-color: $color_pink
+        .crafters_number
+            @extend %number
+            .crafters_number--hidden
+                @extend %number--hidden
+        .crafters_title
+            @extend %title
+    .crafters_content
+        background-color: white
+        width: calc(100% - 370px)
+        margin-left: 370px
+        margin-top: 370px
+        overflow: hidden
+        .crafters_item
+            height: 430px
+            i.--arrow
+                font-size: 60px
+                margin: 20px 25px
+                cursor: pointer
+                background-color: transparent
+                color: white
+                &:hover
+                    color: grey
+        .crafters_item-1
+            padding: 0 5%
+            .crafters_about
+                font-family: 'Times New Roman', Times, serif
+                font-weight: bold
+                font-size: 160px
+                color: $color_purple
+                transform: translateY(-40%)
+            .row.about_item
+                margin-top: -50px
+            .crafters_about-left
+                font-size: 18px
+                padding-right: 5%
+                padding-bottom: 30px
+            .crafters_about-right
+                li
+                    font-size: 17px
+                    padding-top: 5px
+                li:first-child
+                    padding-top: 0
+            span.--pink
+                color: $color_pink
+                font-weight: bold
+        .crafters_item-2
+            background-color: $color_purple
+            transition: 0.5s
+            background-size: cover
+            background-image: url('../images/carousel_1.jpg')
+        .crafters_slide-1
+            background-image: url('../images/carousel_1.jpg')
+        .crafters_slide-2
+            background-image: url('../images/carousel_2.jpg')
+        .crafters_slide-3
+            background-image: url('../images/carousel_3.jpg')
+        .crafters_item-3
+            padding: 10% 5%
+            transition: 1s
+            h4 
+                font-size: 20px
+                font-weight: bold
+            h5 
+                color: $color_pink
+                letter-spacing: 6px
+                padding-bottom: 50px
+            .show
+                display: block
+            .not-show
+                display: none
+        .crafters_item-4
+            transition: 1s
+            background-size: cover
+            background-position: center center
+            max-width: 370px
+            margin-left: auto
+            background-image: url('../images/carousel_4.jpg')
+        .crafters_slide-4
+            background-image: url('../images/carousel_4.jpg')
+        .crafters_slide-5
+            background-image: url('../images/carousel_5.jpg')
+        .crafters_slide-6
+            background-image: url('../images/carousel_6.jpg')
+        i.--arrow
+            position: absolute
+            bottom: 0
+
+        
+

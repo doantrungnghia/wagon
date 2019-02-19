@@ -1,0 +1,49 @@
+.services
+    background-color: $color_purple
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .services_square
+        @extend %square
+        position: absolute /////////////////////TODO
+        .services_number
+            @extend %number
+            .services_number--hidden
+                @extend %number--hidden
+        .services_title
+            @extend %title
+    .services_content
+        margin-top: 370px /////////////////////////////TODO
+        background-color: white
+        color: black
+        margin-left: 370px  
+        padding: 30px 30px
+        border: none
+        width: calc(100% - 370px)
+        .services_arrow
+            font-size: 66px
+            color: white
+            position: absolute
+            z-index: 10
+            top: -100px
+        .services_content_item
+            box-sizing: border-box
+            padding: 15px 20px
+            img
+                width: 50px
+                height: 50px
+            h4
+                margin-left: 60px
+                font-size: 24px
+                font-weight: 500
+                @media (max-width: 1300px) and (min-width: 992px)
+                    margin-left: 40px
+                    margin-top: 10px
+            p   
+                margin-top: 10px
+                font-size: 18px
+                line-height: 20px
+                margin-left: 60px
+                @media (max-width: 1300px) and (min-width: 992px)
+                    margin-left: 40px

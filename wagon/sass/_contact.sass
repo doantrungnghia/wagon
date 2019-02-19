@@ -1,0 +1,50 @@
+section.contact
+    background-image: url('../images/bg_4.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .contact_square
+        @extend %square
+        background-color: $color_pink
+        width: 370px
+        .contact_number
+            @extend %number
+            .exp_number--hidden
+                @extend %number--hidden
+        .contact_title
+            @extend %title
+            bottom: -100px
+            letter-spacing: -6px
+    .contact_content
+        margin-top: 370px
+        background-color: white
+        overflow: hidden
+        width: calc( 100% - 370px )
+        margin-left: 370px
+        background-color: white
+        overflow: hidden
+        padding: 30px 5%
+        .contact_item-left
+            .--color_pink
+                color: $color_pink
+        .contact_item-right
+            input
+                width: 100%
+                border: 0px
+                border-bottom: 2px solid grey
+                margin-top: 10px
+                padding-bottom: 15px
+            input:first-child
+                margin-top: 0px
+            .contact_btn
+                width: 100%
+                margin-top: 30px
+                &:hover
+                    background-color: $color_pink
+    .contact_map
+        width: calc( 100% - 370px )
+        padding: 0 0
+        margin-left: 370px
+            

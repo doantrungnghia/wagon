@@ -1,0 +1,81 @@
+section.exp
+    background-image: url('../images/bg_4.jpg')
+    background-size: cover
+    width: 100%
+    margin-right: auto
+    margin-left: auto    
+    max-width: 1140px
+    .exp_square
+        @extend %square
+        background-color: $color_green
+        width: 370px
+        margin-left: calc( 100% - 370px )
+        .exp_number
+            @extend %number
+            .exp_number--hidden
+                @extend %number--hidden
+        .exp_title
+            @extend %title
+            bottom: -45px
+    .exp_content
+        margin-top: 370px
+        background-color: white
+        overflow: hidden
+    .exp_content
+        width: calc( 100% - 370px )
+        background-color: white
+        overflow: hidden
+        padding: 0 2% 50px 2%
+        .exp_item
+            .exp_skill
+                font-size: 170px
+                color: $color_purple
+                transform: translateY(-40%)
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            .exp_text
+                margin-top: -50px
+        .exp_bar
+            margin-left: 20px
+            margin-top: 15px
+            background-color: $color-green
+            position: relative
+            height: 60px
+            overflow: hidden
+            &:hover p 
+                transform: translateX(20%)
+                color: white
+                opacity: 1
+            &:hover span 
+                transform: translateX(-20%)
+                color: white
+                opacity: 1
+            p
+                position: absolute
+                left: 0px
+                top: 25%
+                transform: translateX(-15%)
+                font-size: 30px
+                font-weight: bold
+                opacity: 0.5
+                transition: 0.6s
+            span  
+                position: absolute
+                right: 0px
+                top: 25%
+                transform: translateX(40%)
+                font-size: 30px
+                font-weight: bold
+                opacity: 0.5
+                transition: 0.6s
+        .exp_bar-1
+            width: 81%
+        .exp_bar-2
+            background-color: $color_orange
+            width: 73%
+        .exp_bar-3
+            background-color: $color_pink
+            width: 76%
+        .exp_bar-4
+            background-color: $color_blue
+            width: 95%
+
